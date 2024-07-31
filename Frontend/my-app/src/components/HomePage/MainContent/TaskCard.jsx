@@ -32,7 +32,7 @@ function TaskCard() {
     const newPriority = currentPriority === 'Urgent' ? 'Low' : 'Urgent';
 
     try {
-      await axios.patch(`http://localhost:5000/api/TaskRoutes/${taskId}`, { priority: newPriority });
+      await axios.patch(`https://task-management-app-1-4svs.onrender.com/api/TaskRoutes/${taskId}`, { priority: newPriority });
       setTasks(tasks.map(task =>
         task._id === taskId ? { ...task, priority: newPriority } : task
       ));
