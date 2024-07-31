@@ -18,7 +18,7 @@ function TaskCard() {
           setIsDataVisible(true);
         } else {
           setIsDataVisible(false);
-          alert('No data found');
+          
         }
       } catch (error) {
         console.error('Error fetching task data:', error);
